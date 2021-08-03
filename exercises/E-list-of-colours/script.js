@@ -1,5 +1,22 @@
 function listOfColours(colours) {
-  // Write your code here...
+  let contents = document.querySelector("#content");
+
+  let dropDownOptions = document.createElement("select");
+  let resultText = document.createElement("p");
+
+  contents.appendChild(dropDownOptions);
+  contents.appendChild(resultText);
+
+  colours.forEach((colour) => {
+    let colourOption = document.createElement("option");
+    dropDownOptions.appendChild(colourOption);
+    colourOption.innerText = colour;
+
+    colourOption.addEventListener("click", () => {
+      resultText.innerText = colour;
+      resultText.style.color = colour;
+    });
+  });
 }
 
 const colours = ["red", "blue", "green", "yellow", "pink", "brown"];
