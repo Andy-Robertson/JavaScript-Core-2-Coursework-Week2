@@ -3,8 +3,9 @@ function shoppingList(items) {
 
   items.forEach((item) => {
     let unordered = document.createElement("ul");
-    let list = document.createElement("li");
     contentList.appendChild(unordered);
+
+    let list = document.createElement("li");
     unordered.appendChild(list);
     list.innerText = item;
   });

@@ -6,12 +6,13 @@ function listOfNames(arrayOfPeople) {
 
   arrayOfPeople.forEach((person) => {
     let name = document.createElement("h1");
-    let job = document.createElement("h2");
     content.appendChild(name);
-    content.appendChild(job);
     name.innerText = `My name is ${person.name}`;
-    job.innerText = `And Im a ${person.job}`;
     name.style.color = "Green";
+
+    let job = document.createElement("h2");
+    content.appendChild(job);
+    job.innerText = `And Im a ${person.job}`;
     job.style.color = "Orange";
   });
 }

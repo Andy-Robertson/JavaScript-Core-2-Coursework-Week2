@@ -2,9 +2,9 @@ function listOfColours(colours) {
   let contents = document.querySelector("#content");
 
   let dropDownOptions = document.createElement("select");
-  let resultText = document.createElement("p");
-
   contents.appendChild(dropDownOptions);
+
+  let resultText = document.createElement("p");
   contents.appendChild(resultText);
 
   colours.forEach((colour) => {

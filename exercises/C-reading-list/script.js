@@ -16,8 +16,6 @@ function readingList(books) {
 
   books.forEach((book) => {
     let list = document.createElement("li");
-    let paragraph = document.createElement("p");
-    let image = document.createElement("img");
 
     unordered
       .appendChild(list)
@@ -26,9 +24,14 @@ function readingList(books) {
         "width:26rem; margin-top: 2rem; display: flex; flex-direction: column;"
       );
 
+    let paragraph = document.createElement("p");
     list.appendChild(paragraph);
-    list.appendChild(image);
     paragraph.innerText = `${book.title} - By ${book.author}`;
+
+    // I realised it asked for a url to be linked in the readme but I thought it would be cool to add the link to the
+    // books object array and have a local copy of the images, happy to redo with urls if required :)
+    let image = document.createElement("img");
+    list.appendChild(image);
     image.src = book.cover;
 
     if (book.alreadyRead) {

@@ -1,33 +1,44 @@
 let blueButton = document.querySelector("#blueBtn");
+blueButton.style.cursor = "pointer";
+
 let orangeButton = document.querySelector("#orangeBtn");
+orangeButton.style.cursor = "pointer";
+
 let greenButton = document.querySelector("#greenBtn");
+greenButton.style.cursor = "pointer";
 
 blueButton.addEventListener("click", () => {
   let jumbotron = document.querySelector(".jumbotron");
-  let donateABike = document.querySelector(".btn-lrg");
-  let volunteer = document.querySelector(".btn-secondary");
   jumbotron.style.background = "#588fbd";
+
+  let donateABike = document.querySelector(".btn-lrg");
   donateABike.style.background = "#ffa500";
+
+  let volunteer = document.querySelector(".btn-secondary");
   volunteer.style.background = "black";
   volunteer.style.color = "white";
 });
 
 orangeButton.addEventListener("click", () => {
   let jumbotron = document.querySelector(".jumbotron");
-  let donateABike = document.querySelector(".btn-lrg");
-  let volunteer = document.querySelector(".btn-secondary");
   jumbotron.style.background = " #f0ad4e";
+
+  let donateABike = document.querySelector(".btn-lrg");
   donateABike.style.background = "#5751fd";
+
+  let volunteer = document.querySelector(".btn-secondary");
   volunteer.style.background = "#31b0d5";
   volunteer.style.color = "white";
 });
 
 greenButton.addEventListener("click", () => {
   let jumbotron = document.querySelector(".jumbotron");
-  let donateABike = document.querySelector(".btn-lrg");
-  let volunteer = document.querySelector(".btn-secondary");
   jumbotron.style.background = "#87ca8a";
+
+  let donateABike = document.querySelector(".btn-lrg");
   donateABike.style.background = "black";
+
+  let volunteer = document.querySelector(".btn-secondary");
   volunteer.style.background = "#8c9c08";
   volunteer.style.color = "black";
 });

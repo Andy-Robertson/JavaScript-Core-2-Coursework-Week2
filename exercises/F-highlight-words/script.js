@@ -4,8 +4,9 @@ function highlightWords(paragraph, colours) {
   let contents = document.querySelector("#content");
 
   let paragraphText = document.createElement("p");
-  let colourSelector = document.createElement("select");
   contents.appendChild(paragraphText);
+
+  let colourSelector = document.createElement("select");
   contents.appendChild(colourSelector);
 
   colours.forEach((colour) => {
